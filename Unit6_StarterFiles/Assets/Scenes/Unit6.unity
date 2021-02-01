@@ -1244,6 +1244,8 @@ PlayableDirector:
     value: {fileID: 1886268257}
   - key: {fileID: -2677627637510826718, guid: c9d6852cf646d634c9970e08ff86eb52, type: 2}
     value: {fileID: 874936783}
+  - key: {fileID: 5274722910691371166, guid: c9d6852cf646d634c9970e08ff86eb52, type: 2}
+    value: {fileID: 1366213374}
   m_ExposedReferences:
     m_References:
     - b24314708883be04491d5a9a9f607ace: {fileID: 531693132}
@@ -2524,7 +2526,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 50
+  field of view: 35
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -2549,7 +2551,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.0060781096, y: 0.605269, z: -0.0038189774, w: 0.8467092}
+  m_LocalRotation: {x: 0.008670196, y: 0.8633936, z: -0.0054476284, w: 0.68156713}
   m_LocalPosition: {x: -5.022368, y: 0.8530126, z: 6.7130466}
   m_LocalScale: {x: 1, y: 1, z: 1.0000001}
   m_Children: []
@@ -3364,6 +3366,7 @@ GameObject:
   - component: {fileID: 1291346047}
   - component: {fileID: 1291346046}
   - component: {fileID: 1291346048}
+  - component: {fileID: 1291346049}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -3440,6 +3443,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1291346049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291346045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 449ef5ebbe24720439ec31d15f7b6f3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FocusTracksTarget: 0
+  m_FocusOffset: 0
+  m_Profile: {fileID: 11400000, guid: b2438e927041b03458195afb37006d76, type: 2}
 --- !u!1001 &1338006885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3526,6 +3544,7 @@ GameObject:
   - component: {fileID: 1366213373}
   - component: {fileID: 1366213372}
   - component: {fileID: 1366213374}
+  - component: {fileID: 1366213375}
   m_Layer: 0
   m_Name: CM vcam2
   m_TagString: Untagged
@@ -3602,6 +3621,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1366213375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1366213371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 449ef5ebbe24720439ec31d15f7b6f3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FocusTracksTarget: 1
+  m_FocusOffset: 2.7
+  m_Profile: {fileID: 11400000, guid: fa02c01a50cd4dc429a304fb0f01b896, type: 2}
 --- !u!1001 &1385427379
 PrefabInstance:
   m_ObjectHideFlags: 0
