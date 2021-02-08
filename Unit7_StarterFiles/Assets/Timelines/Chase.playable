@@ -7301,87 +7301,6 @@ MonoBehaviour:
   m_OpenClipOffsetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_ApplyOffsets: 0
---- !u!114 &-889982292306758305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fde0a8ac3e6b482c95fa602e65ab045, type: 3}
-  m_Name: MovieRecorderSettings
-  m_EditorClassIdentifier: 
-  enabled: 1
-  take: 2
-  captureEveryNthFrame: 1
-  fileNameGenerator:
-    m_Path:
-      m_Root: 0
-      m_Leaf: Recordings
-      m_ForceAssetFolder: 0
-    m_FileName: Rendered_Movie_Take_01
-  outputFormat: 0
-  videoBitRateMode: 2
-  captureAlpha: 0
-  m_ImageInputSelector:
-    m_Selected: gameViewInputSettings
-    gameViewInputSettings:
-      m_OutputResolution:
-        m_CustomWidth: 1024
-        m_CustomHeight: 1024
-        imageHeight: 1440
-        maxSupportedHeight: 2160
-        m_AspectRatio:
-          m_CustomAspectX: 1
-          m_CustomAspectY: 1
-          m_ImageAspect: 1
-      flipFinalOutput: 1
-    cameraInputSettings:
-      m_OutputResolution:
-        m_CustomWidth: 1024
-        m_CustomHeight: 1024
-        imageHeight: 0
-        maxSupportedHeight: 4320
-        m_AspectRatio:
-          m_CustomAspectX: 1
-          m_CustomAspectY: 1
-          m_ImageAspect: 1
-      source: 2
-      cameraTag: 
-      flipFinalOutput: 0
-      captureUI: 0
-    camera360InputSettings:
-      source: 2
-      cameraTag: 
-      flipFinalOutput: 0
-      renderStereo: 1
-      stereoSeparation: 0.065
-      mapSize: 1024
-      m_OutputWidth: 1024
-      m_OutputHeight: 2048
-    renderTextureInputSettings:
-      renderTexture: {fileID: 0}
-      flipFinalOutput: 0
-    renderTextureSamplerSettings:
-      source: 1
-      m_RenderWidth: 1280
-      m_RenderHeight: 720
-      m_OutputWidth: 1280
-      m_OutputHeight: 720
-      outputAspectRatio:
-        m_CustomAspectX: 1
-        m_CustomAspectY: 1
-        m_ImageAspect: 1
-      superSampling: 1
-      superKernelPower: 16
-      superKernelScale: 1
-      cameraTag: 
-      colorSpace: 0
-      flipFinalOutput: 0
-  m_AudioInputSettings:
-    preserveAudio: 1
 --- !u!114 &-821268373767481981
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7733,7 +7652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1e95aa6d658d694785bfde37c857fff, type: 3}
   m_Name: RecorderClip
   m_EditorClassIdentifier: 
-  settings: {fileID: -889982292306758305}
+  settings: {fileID: 2925057759856979188}
 --- !u!114 &-660150291054057004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9172,6 +9091,85 @@ MonoBehaviour:
   m_OpenClipOffsetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
   m_ApplyOffsets: 0
+--- !u!114 &2925057759856979188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06397f605c749fe4dbe2df4bbd1ef4a1, type: 3}
+  m_Name: ImageRecorderSettings
+  m_EditorClassIdentifier: 
+  enabled: 1
+  take: 2
+  captureEveryNthFrame: 1
+  fileNameGenerator:
+    m_Path:
+      m_Root: 0
+      m_Leaf: Recordings
+      m_ForceAssetFolder: 0
+    m_FileName: image_<Frame>
+  outputFormat: 1
+  captureAlpha: 0
+  captureHDR: 0
+  m_ImageInputSelector:
+    m_Selected: gameViewInputSettings
+    gameViewInputSettings:
+      m_OutputResolution:
+        m_CustomWidth: 1024
+        m_CustomHeight: 1024
+        imageHeight: 4320
+        maxSupportedHeight: 4320
+        m_AspectRatio:
+          m_CustomAspectX: 1
+          m_CustomAspectY: 1
+          m_ImageAspect: 1
+      flipFinalOutput: 1
+    cameraInputSettings:
+      m_OutputResolution:
+        m_CustomWidth: 1024
+        m_CustomHeight: 1024
+        imageHeight: 0
+        maxSupportedHeight: 4320
+        m_AspectRatio:
+          m_CustomAspectX: 1
+          m_CustomAspectY: 1
+          m_ImageAspect: 1
+      source: 2
+      cameraTag: 
+      flipFinalOutput: 0
+      captureUI: 0
+    camera360InputSettings:
+      source: 2
+      cameraTag: 
+      flipFinalOutput: 0
+      renderStereo: 1
+      stereoSeparation: 0.065
+      mapSize: 1024
+      m_OutputWidth: 1024
+      m_OutputHeight: 2048
+    renderTextureInputSettings:
+      renderTexture: {fileID: 0}
+      flipFinalOutput: 0
+    renderTextureSamplerSettings:
+      source: 1
+      m_RenderWidth: 1280
+      m_RenderHeight: 720
+      m_OutputWidth: 1280
+      m_OutputHeight: 720
+      outputAspectRatio:
+        m_CustomAspectX: 1
+        m_CustomAspectY: 1
+        m_ImageAspect: 1
+      superSampling: 1
+      superKernelPower: 16
+      superKernelScale: 1
+      cameraTag: 
+      colorSpace: 0
+      flipFinalOutput: 0
 --- !u!114 &2975695784028184938
 MonoBehaviour:
   m_ObjectHideFlags: 1
